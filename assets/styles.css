@@ -51,3 +51,111 @@ body {
   color: black;
   font-weight: var(--font-semibold);
 }
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#hero {
+  margin-top: 35px;
+  padding: 75px 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 50%;
+}
+.hero-info h1 {
+  font-size: 30px;
+  font-weight: var(--font-black);
+  color: whitesmoke;
+}
+
+.hero-info p {
+  font-size: 14px;
+  width: 70%;
+  color: whitesmoke;
+}
+
+.hero-info p > span {
+  font-weight: var(--font-black);
+}
+.btn {
+  font-size: 14px;
+  color: whitesmoke;
+  background: rgb(100, 1, 1);
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+
+.hero-card {
+  background: rgb(100, 1, 1);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  width: 300px;
+}
+
+.hero-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+.hero-card-top h3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: var(--font-semibold);
+}
+.hero-card-top span {
+  background: rgb(245, 245, 245);
+  padding: 3px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.hero-card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-card-creator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-card-creator img {
+  width: 40px;
+  border-radius: 5px;
+}
+.creator-info span,
+.hero-card-price {
+  font-size: 16px;
+  font-weight: var(--font-light);
+}
+.creator-info p,
+.hero-card-price span {
+  font-size: 16px;
+  font-weight: var(--font-semibold);
+}
+.hero-card-price span {
+  font-weight: var(--font-bold);
+}
