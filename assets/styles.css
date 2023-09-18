@@ -15,7 +15,7 @@
   --font-black: 800;
 }
 body {
-  background: rgba(245, 52, 52, 0.904);
+  background: hsla(0, 91%, 58%, 0.856);
 }
 .logo {
   height: 70px;
@@ -75,9 +75,11 @@ main {
   width: 50%;
 }
 .hero-info h1 {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: var(--font-black);
   color: whitesmoke;
+  min-width: 500px;
+  width: 80%;
 }
 
 .hero-info p {
@@ -105,7 +107,7 @@ main {
   flex-direction: column;
   gap: 20px;
   justify-content: center;
-  width: 300px;
+  width: 350px;
 }
 
 .hero-card-info {
@@ -137,25 +139,71 @@ main {
   justify-content: space-between;
 }
 
-.hero-card-creator {
+.hero-card-vendedor {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.hero-card-creator img {
+.hero-card-vendedor img {
   width: 40px;
   border-radius: 5px;
 }
-.creator-info span,
+.vendedor-info span,
 .hero-card-price {
   font-size: 16px;
   font-weight: var(--font-light);
 }
-.creator-info p,
+.vendedor-info p,
 .hero-card-price span {
   font-size: 16px;
   font-weight: var(--font-semibold);
 }
 .hero-card-price span {
   font-weight: var(--font-bold);
+}
+/*info card */
+#info {
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+#info h2 {
+  font-size: 26px;
+  font-weight: var(--font-black);
+}
+.info-card-conteiner {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-card {
+  text-align: center;
+  background: rgb(100, 1, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 300px;
+  height: 400px;
+}
+.info-card img {
+  width: 75px;
+}
+.info-card h3 {
+  font-weight: 18px;
+  font-size: var(--font-bold);
+}
+.info-card p {
+  font-size: 16px;
+  font-weight: var(--font-light);
 }
